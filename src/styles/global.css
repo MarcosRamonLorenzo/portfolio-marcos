@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Teko:wght@300..700&display=swap');
+
+:root {
+  --font-merriweather: 'Merriweather', serif;
+  --font-source: 'Source Sans 3', sans-serif;
+  --font-teko: 'Teko', sans-serif;
+  --primary-color: #1e88e5;
+  --secondary-color: #ff5722;
+  --background-color: #121212;
+  --text-color: #f9f9f9;
+}
+
+body {
+  font-family: var(--font-source);
+  color: var(--text-color);
+}
