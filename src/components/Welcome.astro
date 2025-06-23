@@ -2,14 +2,32 @@
 import "./Welcome.css";
 import Linkdin from "@/components/Icons/Linkdin.astro";
 import Whatsapp from "@/components/Icons/Whatsapp.astro";
+import Github from "@/components/Icons/Github.astro";
+import CirclesPattern from "@/components/GraficDecorators/CirclesPattern.astro";
+import SleveObject from "@/components/GraficDecorators/SleveObject.astro";
 ---
 
 <div class="welcome-container">
+
+  <nav class="top-right-menu">
+  <ul>
+    <li><a class="menu__link" href="#home">Home</a></li>
+    <li><a class="menu__link" href="#proyectos">Proyectos</a></li>
+    <li><a class="menu__link" href="#experiencia">Experiencia</a></li>
+  </ul>
+</nav>
+
+
   <div class="welcome-container-text">
     <p class="welcome-primary-text" id="welcome-text-firstname">Marcos</p>
     <p class="welcome-primary-text" id="welcome-text-middlename">Ramón</p>
     <p class="welcome-primary-text" id="welcome-text-lastname">Lorenzo</p>
 
+      <div class="welcome-container-socials">
+    <Github />
+    <Linkdin />
+    <Whatsapp />
+  </div>
   </div>
   <p class="welcome-primary-text" id="welcome-text-2">Software Developer</p>
   <div class="welcome-container-image">
@@ -22,8 +40,9 @@ import Whatsapp from "@/components/Icons/Whatsapp.astro";
     />
   </div>
 
-  <div class="welcome-container-socials">
-    <Whatsapp />
-    <Linkdin />
-  </div>
+
+
+  <SleveObject />
+  <CirclesPattern />
+
 </div>

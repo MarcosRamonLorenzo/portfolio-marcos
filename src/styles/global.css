@@ -60,8 +60,11 @@ table {
   --font-merriweather: 'Merriweather', serif;
   --font-source: 'Source Sans 3', sans-serif;
   --font-teko: 'Teko', sans-serif;
+  --titles-font: 'Sharpie-Extrabold', sans-serif;
+  --primary-font: 'Ranade-LightItalic', sans-serif;
   --primary-color: #f43049;
-  --secondary-color: #ff5722;
+  --secondary-color: #179aff;
+  --third-color: #fedc00;
   --background-color: #f5f2ea;
   --text-color: #1a1f3b;
 
@@ -73,68 +76,6 @@ body {
 }
 
 
-@font-face {
-  font-family: 'Sharpie-Light';
-  src: url('../assets/fonts/Sharpie-Light.woff2') format('woff2'),
-       url('../assets/fonts/Sharpie-Light.woff') format('woff'),
-       url('../assets/fonts/Sharpie-Light.ttf') format('truetype');
-  font-weight: 300;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Sharpie-Regular';
-  src: url('../assets/fonts/Sharpie-Regular.woff2') format('woff2'),
-       url('../assets/fonts/Sharpie-Regular.woff') format('woff'),
-       url('../assets/fonts/Sharpie-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Sharpie-Bold';
-  src: url('../assets/fonts/Sharpie-Bold.woff2') format('woff2'),
-       url('../assets/fonts/Sharpie-Bold.woff') format('woff'),
-       url('../assets/fonts/Sharpie-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Sharpie-Extrabold';
-  src: url('../assets/fonts/Sharpie-Extrabold.woff2') format('woff2'),
-       url('../assets/fonts/Sharpie-Extrabold.woff') format('woff'),
-       url('../assets/fonts/Sharpie-Extrabold.ttf') format('truetype');
-  font-weight: 800;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Sharpie-Black';
-  src: url('../assets/fonts/Sharpie-Black.woff2') format('woff2'),
-       url('../assets/fonts/Sharpie-Black.woff') format('woff'),
-       url('../assets/fonts/Sharpie-Black.ttf') format('truetype');
-  font-weight: 900;
-  font-display: swap;
-  font-style: normal;
-}
-/**
-* This is a variable font
-* You can control variable axes as shown below:
-* font-variation-settings: wght 900.0;
-*
-* available axes:
-'wght' (range from 300.0 to 900.0
-*/
-@font-face {
-  font-family: 'Sharpie-Variable';
-  src: url('../assets/fonts/Sharpie-Variable.woff2') format('woff2'),
-       url('../assets/fonts/Sharpie-Variable.woff') format('woff'),
-       url('../assets/fonts/Sharpie-Variable.ttf') format('truetype');
-  font-weight: 300 900;
-  font-display: swap;
-  font-style: normal;
-}
 
 
 
