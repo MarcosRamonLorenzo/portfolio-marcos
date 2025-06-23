@@ -8,6 +8,11 @@
   gap: 40px;
 }
 
+/*Avoid intercation bug with patterns*/
+.welcome-container > div {
+  z-index: 5;
+}
+
 .welcome-container-image {
   margin-top: 0px;
 }
@@ -90,14 +95,12 @@
 
 }
 
-
 .cicles-pattern{
   position: absolute;
-
+  z-index: 2;
   top: -35px;
   left: -105px;
-  width: 100%;
-  height: 100%;
+
 
 }
 
@@ -137,18 +140,3 @@
   transition: color 0.2s;
 }
 
-.menu__link::before {
-  content: '';
-  width: 0;
-  height: 2px;
-  border-radius: 2px;
-  background-color: var(--third-color);
-  position: absolute;
-  bottom: -.25rem;
-  left: 0;
-  transition: width .4s;
-}
-
-.menu__link:hover::before {
-  width: 100%;
-}

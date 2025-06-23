@@ -1,26 +1,44 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Marcos Ramón Lorenzo</title>
-		<link rel="stylesheet" href="src/styles/global.css" />
-		<link rel="stylesheet" href="src/assets/fonts/Sharpie/css/sharpie.css" />
-		<link rel="stylesheet" href="src/assets/fonts/Ranade/css/ranade.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Marcos Ramón Lorenzo</title>
+    <link rel="stylesheet" href="src/styles/global.css" />
+    <link rel="stylesheet" href="src/assets/fonts/Sharpie/css/sharpie.css" />
+    <link rel="stylesheet" href="src/assets/fonts/Ranade/css/ranade.css" />
+  </head>
+  <body>
+    <slot />
+    <div id="inner-cursor"></div>
+	<div id="outer-cursor"></div>
+  </body>
+  <script>
+    const innerCursor = document.getElementById("inner-cursor");
+	const outerCursor = document.getElementById("outer-cursor");
 
-	</head>
-	<body>
-		<slot />
-	</body>
+
+    if (!innerCursor || !outerCursor) {
+	  document.body.style.cursor = "auto"; 
+    } else {
+	  document.body.style.cursor = "none"; 
+      document.addEventListener("mousemove", (e) => {
+        innerCursor.style.left = e.clientX + "px";
+        innerCursor.style.top = e.clientY + "px";
+		outerCursor.style.left = e.clientX + "px";
+		outerCursor.style.top = e.clientY + "px";
+      });
+    }
+  </script>
 </html>
 
 <style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
+  html,
+  body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
 </style>
