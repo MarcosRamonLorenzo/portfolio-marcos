@@ -1,16 +1,143 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Teko:wght@300..700&display=swap');
 
+
+
+/* Reset CSS */
+
+/* https://meyerweb.com/eric/tools/css/reset/ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, menu, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+menu, ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote::before, blockquote::after,
+q::before, q::after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
 :root {
   --font-merriweather: 'Merriweather', serif;
   --font-source: 'Source Sans 3', sans-serif;
   --font-teko: 'Teko', sans-serif;
-  --primary-color: #1e88e5;
+  --primary-color: #f43049;
   --secondary-color: #ff5722;
-  --background-color: #121212;
-  --text-color: #f9f9f9;
+  --background-color: #f5f2ea;
+  --text-color: #1a1f3b;
+
 }
 
 body {
   font-family: var(--font-source);
   color: var(--text-color);
 }
+
+
+@font-face {
+  font-family: 'Sharpie-Light';
+  src: url('../assets/fonts/Sharpie-Light.woff2') format('woff2'),
+       url('../assets/fonts/Sharpie-Light.woff') format('woff'),
+       url('../assets/fonts/Sharpie-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Sharpie-Regular';
+  src: url('../assets/fonts/Sharpie-Regular.woff2') format('woff2'),
+       url('../assets/fonts/Sharpie-Regular.woff') format('woff'),
+       url('../assets/fonts/Sharpie-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Sharpie-Bold';
+  src: url('../assets/fonts/Sharpie-Bold.woff2') format('woff2'),
+       url('../assets/fonts/Sharpie-Bold.woff') format('woff'),
+       url('../assets/fonts/Sharpie-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Sharpie-Extrabold';
+  src: url('../assets/fonts/Sharpie-Extrabold.woff2') format('woff2'),
+       url('../assets/fonts/Sharpie-Extrabold.woff') format('woff'),
+       url('../assets/fonts/Sharpie-Extrabold.ttf') format('truetype');
+  font-weight: 800;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Sharpie-Black';
+  src: url('../assets/fonts/Sharpie-Black.woff2') format('woff2'),
+       url('../assets/fonts/Sharpie-Black.woff') format('woff'),
+       url('../assets/fonts/Sharpie-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+/**
+* This is a variable font
+* You can control variable axes as shown below:
+* font-variation-settings: wght 900.0;
+*
+* available axes:
+'wght' (range from 300.0 to 900.0
+*/
+@font-face {
+  font-family: 'Sharpie-Variable';
+  src: url('../assets/fonts/Sharpie-Variable.woff2') format('woff2'),
+       url('../assets/fonts/Sharpie-Variable.woff') format('woff'),
+       url('../assets/fonts/Sharpie-Variable.ttf') format('truetype');
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+
+
+
+
+

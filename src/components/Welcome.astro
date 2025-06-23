@@ -1,18 +1,25 @@
 ---
-import './Welcome.css';
-import Linkdin from '@/components/Icons/Linkdin.astro';
-import Whatsapp from '@/components/Icons/Whatsapp.astro';
+import "./Welcome.css";
+import Linkdin from "@/components/Icons/Linkdin.astro";
+import Whatsapp from "@/components/Icons/Whatsapp.astro";
 ---
 
 <div class="welcome-container">
-  <div class="welcome-container__img">
-    <div
-      style="width: 400px; height: 400px; background-color: #2563eb; border-radius: 0.5rem;"
-    >
-    </div>
-    <img src="https://ibb.co/KxtNYTGJ" alt="" srcset="" />
-    <p class="welcome-primary-text" id="welcome-text-1">Software</p>
-    <p class="welcome-primary-text" id="welcome-text-2">Developer</p>
+  <div class="welcome-container-text">
+    <p class="welcome-primary-text" id="welcome-text-firstname">Marcos</p>
+    <p class="welcome-primary-text" id="welcome-text-middlename">Ramón</p>
+    <p class="welcome-primary-text" id="welcome-text-lastname">Lorenzo</p>
+
+  </div>
+  <p class="welcome-primary-text" id="welcome-text-2">Software Developer</p>
+  <div class="welcome-container-image">
+    <div class="welcome-container-image__square"></div>
+    <img
+      src="https://i.postimg.cc/66PjGFc9/img-me.webp"
+      class="welcome-container-image__img"
+      alt=""
+      srcset=""
+    />
   </div>
 
   <div class="welcome-container-socials">

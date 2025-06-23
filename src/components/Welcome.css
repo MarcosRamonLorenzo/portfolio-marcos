@@ -2,36 +2,74 @@
   position: relative;
   background-color: var(--background-color);
   height: 100vh;
-  text-align: center;
-}
-
-.welcome-container__img {
-  position: relative;
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 40px;
 }
+
+.welcome-container-image {
+  margin-top: 0px;
+}
+
+.welcome-container-image__img {
+  width: 30em;
+  object-fit: cover;
+  
+}
+
+/* .welcome-container-image__square {
+  position: absolute;
+  transform: rotate(15deg);
+  transform-origin: center;
+  width: 400px;
+  height: 400px;
+  background-color: #F2C744;
+  border-radius: 0.5rem;
+} */
 
 .welcome-primary-text {
-  position: absolute;
+  text-align: end;
+  color: var(--text-color);
   text-transform: uppercase;
-  font-family: var(--font-teko);
+  font-family: 'Sharpie-Extrabold';
   font-weight: 700;
-  font-size: 7.5rem;
-  margin-bottom: 1rem;
+  font-size: 7rem;
   letter-spacing: -0.02em;
   user-select: none;
+  z-index: 3;
+  margin: 0;
 }
+
+
+#welcome-text-firstname {
+  font-size: 12rem;
+}
+
+#welcome-text-middlename {
+  font-size: 11rem;
+}
+
+#welcome-text-lastname {
+  font-size: 8rem;
+}
+
+
 
 #welcome-text-2 {
-  top: 333px;
-  left: 700px;
-}
-
-#welcome-text-1 {
-  top: 9.8px;
-  left: 389px;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: 1rem; /* Ajusta según tu diseño */
+  font-family: 'Sharpie-Extrabold', sans-serif;
+  color: var(--primary-color);
+  background: var(--background-color);
+  border: 4px solid  var(--primary-color);
+  padding: 0.6rem 0.5rem;
+  letter-spacing: 0.2em;
+  font-weight: 800;
+  text-align: center;
+  display: inline-block;
+  box-sizing: border-box;
 }
 
 .welcome-container-socials {
