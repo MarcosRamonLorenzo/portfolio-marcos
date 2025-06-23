@@ -55,6 +55,10 @@ table {
   border-spacing: 0;
 }
 
+a{
+  cursor: none;
+}
+
 
 :root {
   --font-merriweather: 'Merriweather', serif;
@@ -73,6 +77,11 @@ table {
 body {
   font-family: var(--font-source);
   color: var(--text-color);
+}
+
+#inner-cursor,
+#outer-cursor {
+  pointer-events: none;
 }
 
 
