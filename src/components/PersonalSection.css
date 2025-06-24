@@ -1,0 +1,19 @@
+.about-section {
+  height: 100vh;
+  background-color: var(--background-color);
+  font-family: var(--primary-font);
+}
+
+.about-section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 0 20em;
+}
+
+.about-description {
+  padding: 20px;
+  height: 10em;
+}

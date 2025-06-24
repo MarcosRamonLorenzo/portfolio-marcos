@@ -1,23 +1,91 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Teko:wght@300..700&display=swap');
 
-
-
 /* Reset CSS */
 
 /* https://meyerweb.com/eric/tools/css/reset/ */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, menu, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-main, menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+menu,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -27,8 +95,18 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, main, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -36,16 +114,21 @@ body {
   line-height: 1;
 }
 
-menu, ol, ul {
+menu,
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote::before, blockquote::after,
-q::before, q::after {
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
   content: '';
   content: none;
 }
@@ -55,23 +138,19 @@ table {
   border-spacing: 0;
 }
 
-a{
+a {
   cursor: none;
 }
 
-
 :root {
-  --font-merriweather: 'Merriweather', serif;
-  --font-source: 'Source Sans 3', sans-serif;
-  --font-teko: 'Teko', sans-serif;
   --titles-font: 'Sharpie-Extrabold', sans-serif;
-  --primary-font: 'Ranade-LightItalic', sans-serif;
+  --links-font: 'Ranade-LightItalic', sans-serif;
+  --primary-font: 'Ranade-Regular', serif;
   --primary-color: #f43049;
   --secondary-color: #179aff;
   --third-color: #fedc00;
   --background-color: #f5f2ea;
   --text-color: #1a1f3b;
-
 }
 
 body {
@@ -84,16 +163,15 @@ body {
   pointer-events: none;
 }
 
-
 #inner-cursor {
   position: fixed;
   width: 10px;
   height: 10px;
   left: 10px;
   color: #000;
-  mix-blend-mode: luminosity;
+  mix-blend-mode: normal;
   transform: translate(-50%, -50%);
-  background-color:var(--primary-color); /* Cambia el color aquí */
+  background-color: var(--text-color); /* Cambia el color aquí */
   border-radius: 50%;
   pointer-events: none; /* para que no interfiera con clicks */
   z-index: 9999;
@@ -107,20 +185,9 @@ body {
   height: 25px;
   transform: translate(-50%, -50%);
   border: 1px solid var(--text-color); /* Cambia el color aquí */
-  mix-blend-mode: luminosity;
+  mix-blend-mode: normal;
   border-radius: 50%;
   pointer-events: 0.1ms;
   z-index: 9999;
   transition: 0.1s;
 }
-
-
-
-
-
-
-
-
-
-
-
