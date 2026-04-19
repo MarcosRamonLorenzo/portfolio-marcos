@@ -177,12 +177,46 @@
 }
 
 .project-img {
-  width: 16em;
+  width: 100%;
   height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   --color: #E1E1E1;
   background-color: #F3F3F3;
-  background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
-      linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+ background-image: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 19px,
+      rgba(75, 85, 99, 0.08) 19px,
+      rgba(75, 85, 99, 0.08) 20px,
+      transparent 20px,
+      transparent 39px,
+      rgba(75, 85, 99, 0.08) 39px,
+      rgba(75, 85, 99, 0.08) 40px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 19px,
+      rgba(75, 85, 99, 0.08) 19px,
+      rgba(75, 85, 99, 0.08) 20px,
+      transparent 20px,
+      transparent 39px,
+      rgba(75, 85, 99, 0.08) 39px,
+      rgba(75, 85, 99, 0.08) 40px
+    ),
+    radial-gradient(
+      circle at 20px 20px,
+      rgba(55, 65, 81, 0.12) 2px,
+      transparent 2px
+    ),
+    radial-gradient(
+      circle at 40px 40px,
+      rgba(55, 65, 81, 0.12) 2px,
+      transparent 2px
+    );
+
   background-size: 55px 55px;
   background-position: 0 0, 20px 20px;
   position: relative;
@@ -190,9 +224,9 @@
 }
 
 .project-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  max-width: 95%;
+  max-height: 95%;
+  object-fit: contain;
   display: block;
 }
 
@@ -212,6 +246,7 @@
 
 .project-desc {
   font-size: 13px;
+  max-width: 18em;
   line-height: 1.6;
   margin: 0;
   color: var(--text-color-muted);
