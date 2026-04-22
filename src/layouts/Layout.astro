@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="https://i0.wp.com/kdkjd.org/wp-content/uploads/2024/02/4d5bb-e8838ce699afe381aae38197.png?fit=192%2C186&ssl=1" />
     <meta name="generator" content={Astro.generator} />
     <title>Marcos Ramón Lorenzo</title>
@@ -21,9 +21,20 @@
     const innerCursor = document.getElementById("inner-cursor");
 	const outerCursor = document.getElementById("outer-cursor");
 
+    // Check if device is touch-enabled
+    const isTouchDevice = () => {
+      return (('ontouchstart' in window) ||
+              (navigator.maxTouchPoints > 0) ||
+              (navigator.msMaxTouchPoints > 0));
+    };
 
     if (!innerCursor || !outerCursor) {
 	  document.body.style.cursor = "auto"; 
+    } else if (isTouchDevice()) {
+      // Hide custom cursor on touch devices
+      document.body.style.cursor = "auto";
+      innerCursor.style.display = "none";
+      outerCursor.style.display = "none";
     } else {
 	  document.body.style.cursor = "none"; 
       document.addEventListener("mousemove", (e) => {

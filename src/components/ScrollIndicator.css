@@ -35,3 +35,10 @@
   transition: background-color 0.3s ease;
   background-color: var(--primary-color);
 }
+
+/* Hide scroll indicator on mobile */
+@media (max-width: 768px) {
+  .window-toolbar {
+    display: none;
+  }
+}

@@ -115,6 +115,14 @@ body {
   transition: 0.1s;
 }
 
+/* Hide custom cursor on mobile devices */
+@media (max-width: 768px) {
+  #inner-cursor,
+  #outer-cursor {
+    display: none;
+  }
+}
+
 
 
 
