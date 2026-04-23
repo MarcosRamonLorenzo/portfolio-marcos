@@ -22,7 +22,8 @@
   padding: 2rem;
   border-radius: 12px;
   box-sizing: border-box;
-  width: 100%;
+  width: 80%;
+  
 }
 
 .personal-info-content::before {
@@ -304,6 +305,7 @@
   .personal-info-content {
     padding: 1.5rem;
     margin: 0 1rem;
+    width: 95%;
   }
 
   .personal-info-content::before {
@@ -329,18 +331,11 @@
     max-width: 100%;
     width: 100%;
     box-sizing: border-box;
-    overflow-x: hidden;
+    overflow: hidden;
   }
 
   .technologies-list {
-    min-height: auto;
-    border: 4px solid var(--text-color);
-    gap: 0.8rem;
-    padding: 1rem;
-    width: 100%;
-    box-sizing: border-box;
-    overflow-x: hidden;
-    justify-content: flex-start;
+
   }
 
   .technologies-list::before {
@@ -359,7 +354,7 @@
 
   .technology-item {
     margin: 0;
-    flex: 0 0 calc(33.333% - 0.6rem);
+    flex: 0 0 calc(33.333% - 0.2rem);
     gap: 10px;
     padding: 0.5rem;
   }
@@ -428,14 +423,7 @@
   }
 
   .technologies-list {
-    min-height: auto;
-    border: 3px solid var(--text-color);
-    gap: 0.6rem;
-    padding: 1rem;
-    width: 100%;
-    box-sizing: border-box;
-    overflow-x: hidden;
-    justify-content: flex-start;
+ 
   }
 
   .technologies-list::before {
@@ -458,7 +446,7 @@
 
   .technology-item {
     margin: 0;
-    flex: 0 0 calc(50% - 0.4rem);
+    flex: 0 0 calc(25% - 0.2rem);
     gap: 8px;
     padding: 0.4rem;
   }
